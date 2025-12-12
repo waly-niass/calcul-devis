@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rénovation</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire Rénovation</h1>
+    </header>
+
+    <main>
+        <form id="formRenovation">
+            <label>Type de travaux:
+                <select name="travaux">
+                    <option value="carrelage">Carrelage</option>
+                    <option value="peinture">Peinture</option>
+                    <option value="plomberie">Plomberie</option>
+                </select>
+            </label>
+            <label>Surface (m²): <input type="number" name="surface" required></label>
+            <label>Finition:
+                <select name="finition">
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </label>
+            <label>Options:
+                <select multiple name="options">
+                    <option value="depose">Dépose ancien</option>
+                    <option value="ragréage">Ragréage</option>
+                </select>
+            </label>
+            <button type="submit">Calculer le devis</button>
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/pdf.js"></script>
+</body>
+
+</html>
