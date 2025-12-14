@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Construction Neuve</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulaire Construction Neuve</h1>
+    </header>
+
+    <main>
+        <form id="formConstruction">
+            <label>Surface terrain (m²): <input type="number" name="terrain" required></label>
+            <label>Nombre d'étages: <input type="number" name="etages" required></label>
+            <label>Nombre de pièces: <input type="number" name="pieces" required></label>
+            <label>Type de structure:
+                <select name="structure">
+                    <option value="béton">Béton</option>
+                    <option value="bois">Bois</option>
+                    <option value="acier">Acier</option>
+                </select>
+            </label>
+            <label>Type de toiture:
+                <select name="toiture">
+                    <option value="tuile">Tuile</option>
+                    <option value="tôle">Tôle</option>
+                </select>
+            </label>
+            <label>Finition:
+                <select name="finition">
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </label>
+            <button type="submit">Calculer le devis</button>
+        </form>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script src="js/pdf.js"></script>
+</body>
+
+</html>
